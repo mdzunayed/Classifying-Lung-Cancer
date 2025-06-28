@@ -1,4 +1,4 @@
-# 🧠 Lung Cancer Histopathology Image Classification using Deep Learning
+#  Lung Cancer Histopathology Image Classification using Deep Learning
 
 This repository contains a Jupyter Notebook that implements a deep learning solution for classifying lung cancer from histopathology images. The objective is to automatically distinguish between **adenocarcinoma**, **squamous cell carcinoma**, and **benign** tissue types using Convolutional Neural Networks (CNNs) and transfer learning.
 
