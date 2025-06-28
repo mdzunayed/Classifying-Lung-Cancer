@@ -18,12 +18,16 @@ The model uses transfer learning with **VGG16**, a well-established deep learnin
 -  `adenocarcinoma`  
 - `benign`  
 - `squamous_cell_carcinoma`
- Images are resized to `224x224` pixels and converted to grayscale. Data augmentation is applied to increase dataset diversity.
-
+<p align="left">
+  <img src="images/adenocarcinoma.png" alt="adenocarcinoma" width="500"/>
+ <img src="images/benign.png" alt="benign" width="500"/>
+ <img src="images/squamous_cell_carcinoma.png" alt="squamous_cell_carcinoma" width="500"/>
+</p>
 
 The dataset used in this project is publicly available on Kaggle:  
 🔗 [Lung Cancer Histopathological Images Dataset](https://www.kaggle.com/datasets/rm1000/lung-cancer-histopathological-images)
 
+Images are resized to `224x224` pixels.
 ---
 
 ##  Methodology
@@ -43,13 +47,6 @@ The pipeline involves the following stages:
    - Optimizer: `Adam`  
    - Loss Function: `categorical_crossentropy`  
    - Metrics: `accuracy`
-
-4. **Model Evaluation**  
-   - Accuracy score  
-   - Confusion matrix  
-   - Classification report  
-   - ROC-AUC curves for multi-class analysis
-
 
 ---
 ##  Model Architecture
@@ -76,14 +73,26 @@ After training, the model's performance is visualized and evaluated using:
 
 -  **Confusion Matrix**
 -  **Accuracy Score : 97%**
--  **ROC Curve**
+-  **ROC and AUC Curve**
+
 
 > **Sample Visualizations:** *(Generated after running the notebook)*
 > - Training vs Validation Accuracy/Loss Curves
-> - Confusion Matrix Plot
+ <p align="center">
+  <img src="images/Training and Validation curves.png" alt="Training and Validation curves" width="500"/>
+</p>
+> - Confusion Matrix
+> - <p align="center">
+  <img src="images/confusion matrix.png" alt="Confusion Matrix" width="500"/>
+</p>
 > - ROC-AUC Curve
+-> - <p align="center">
+  <img src="images/ROC and AUC curve.png" alt="ROC and AUC curve" width="500"/>
+</p>
+
 ---
- ##  Dependencies
+
+##  Dependencies
 
 Ensure the following Python libraries are installed:
 
